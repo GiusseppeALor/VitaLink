@@ -1,4 +1,5 @@
-function mostrarPerfil() {
-  const perfil = document.getElementById('perfil');
-  perfil.classList.remove('oculto');
-}
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add("dark-mode");
+  }
+});
